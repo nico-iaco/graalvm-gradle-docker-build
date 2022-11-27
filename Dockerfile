@@ -1,10 +1,9 @@
 FROM ghcr.io/graalvm/graalvm-ce:ol9-java17-22
 WORKDIR /app
 
-RUN dnf install -y yum
 
 # For SDKMAN to work we need unzip & zip
-RUN yum install -y unzip zip
+RUN microdnf install -y unzip zip
 
 RUN \
     # Install SDKMAN
