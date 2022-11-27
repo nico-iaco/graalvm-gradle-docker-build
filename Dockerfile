@@ -1,4 +1,4 @@
-FROM ghcr.io/graalvm/graalvm-ce:ol7-java17-22
+FROM ghcr.io/graalvm/graalvm-ce:ol9-java17-22
 WORKDIR /app
 
 # For SDKMAN to work we need unzip & zip
